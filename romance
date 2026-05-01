@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Romance Books</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="genres.html">Genres</a>
+</nav>
+
+<div class="container">
+
+<h1>Romance Books</h1>
+
+<p>
+Romance books are full of emotions, love stories, friendships and unforgettable summer feelings.
+</p>
+
+<!-- BOOK 1 -->
+<div class="book-card">
+  <img src="images/beachread.jpg" alt="Beach Read book cover">
+
+  <div>
+    <h2>Beach Read</h2>
+    <p><strong>Author:</strong> Emily Henry</p>
+    <p>
+      Two writers with opposite views on love spend a summer together and slowly discover real feelings behind their rivalry.
+    </p>
+
+    <div class="review-section">
+      <textarea class="review-input" placeholder="Write your review..."></textarea>
+      <button class="review-btn">Submit</button>
+      <div class="reviews"></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK 2 -->
+<div class="book-card">
+  <img src="images/justforsummer.jpg" alt="Just for Summer book cover">
+
+  <div>
+    <h2>Just for Summer</h2>
+    <p><strong>Author:</strong> Abby Jimenez</p>
+    <p>
+      A fun summer fake-dating story that slowly turns into something real and emotional.
+    </p>
+
+    <div class="review-section">
+      <textarea class="review-input" placeholder="Write your review..."></textarea>
+      <button class="review-btn">Submit</button>
+      <div class="reviews"></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK 3 -->
+<div class="book-card">
+  <img src="images/betterthanmovies.jpg" alt="Better Than the Movies book cover">
+
+  <div>
+    <h2>Better Than the Movies</h2>
+    <p><strong>Author:</strong> Lynn Painter</p>
+    <p>
+      A teenage girl who loves romantic movies discovers that real love is very different from films.
+    </p>
+
+    <div class="review-section">
+      <textarea class="review-input" placeholder="Write your review..."></textarea>
+      <button class="review-btn">Submit</button>
+      <div class="reviews"></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK 4 -->
+<div class="book-card">
+  <img src="images/everysummerafter.jpg" alt="Every Summer After book cover">
+
+  <div>
+    <h2>Every Summer After</h2>
+    <p><strong>Author:</strong> Carley Fortune</p>
+    <p>
+      A second-chance romance about childhood friends who reconnect after many years.
+    </p>
+
+    <div class="review-section">
+      <textarea class="review-input" placeholder="Write your review..."></textarea>
+      <button class="review-btn">Submit</button>
+      <div class="reviews"></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK 5 -->
+<div class="book-card">
+  <img src="images/peoplewemeet.jpg" alt="People We Meet on Vacation book cover">
+
+  <div>
+    <h2>People We Meet on Vacation</h2>
+    <p><strong>Author:</strong> Emily Henry</p>
+    <p>
+      Two best friends go on yearly vacations together, but their relationship slowly changes into something deeper.
+    </p>
+
+    <div class="review-section">
+      <textarea class="review-input" placeholder="Write your review..."></textarea>
+      <button class="review-btn">Submit</button>
+      <div class="reviews"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
