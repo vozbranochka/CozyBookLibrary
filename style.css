@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f7f3ee;
+  color: #2c2c2c;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  gap: 12px;
+  padding: 18px 30px;
+  background: #f7f3ee;
+  border-bottom: 1px solid #e6e0d8;
+}
+
+.navbar a {
+  padding: 12px 20px;
+  background: #e8d8c8;
+  color: #5a4636;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+.navbar a:hover {
+  background: #a67c52;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* ================= BOOK CARDS ================= */
+.book-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ================= TEXT ================= */
+h1, h2 {
+  color: #3b2f25;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ================= IMAGES ================= */
+.book-card img {
+  width: 240px;
+  height: 320px;
+  object-fit: contain;
+  background: #fff;
+  padding: 6px;
+  border-radius: 14px;
+  border: 2px solid #e7d8c9;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ================= LINKS (FIXED 100%) ================= */
+a {
+  color: #8c6847;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+
+a:hover {
+  color: #a67c52;
+}
+
+/* button-style links */
+.book-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #a67c52;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+  position: relative;
+  z-index: 10;
+}
+
+.book-card a:hover {
+  background: #8c6847;
+}
+
+/* ================= TEXTAREA ================= */
+textarea {
+  font-family: Georgia, serif;
+  font-style: italic;
+  background: #fffaf5;
+  border: 1px solid #e7d8c9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ================= BUTTONS ================= */
+button,
+input[type="submit"] {
+  background: #a67c52;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #8c6847;
+}
+
+/* ================= GENRES GRID ================= */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-top: 35px;
+  padding: 10px 8px;
+  align-items: stretch;
+}
+
+/* ================= GENRE CARD ================= */
+.genre-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  background: linear-gradient(135deg, #f0e4d8, #e6d6c6);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #2f221b;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  border: 1px solid rgba(120, 90, 70, 0.12);
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.genre-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255,255,255,0.4),
+    transparent 70%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.genre-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: linear-gradient(135deg, #ead8c8, #ddc7b3);
+  box-shadow:
+    0 14px 24px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+  color: #1f1611;
+}
+
+.genre-card:active {
+  transform: scale(0.98);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .book-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* ================= GENRES ================= */
+.genre-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+
+  font-size: 18px;
+}
+
+.genre-table th {
+  background: #f3e6da;
+  padding: 16px;
+  text-align: left;
+  color: #4a3b2f;
+
+  border-bottom: 2px solid #d8c9b8;
+  border-right: 1px solid #d8c9b8; 
+}
+
+.genre-table th:last-child {
+  border-right: none;
+}
+
+.genre-table td {
+  padding: 18px;
+  color: #3b2f25;
+  background: #fffaf5;
+
+  border-bottom: 1px solid #d8c9b8; 
+  border-right: 1px solid #d8c9b8;  
+}
+.genre-table td:last-child {
+  border-right: none;
+}
+
+.genre-table tr:hover td {
+  background: #f6e9df;
+}
+
+.genre-table a {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #a67c52;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.genre-table a:hover {
+  background: #8c6847;
+}
